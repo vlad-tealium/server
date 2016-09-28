@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Zlatic Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+var utag_data = {
+    
+    dztester:"megster",
+    search_keyword: "lam",
+    testbadge: "true"
+}
+</script>
+
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+    var cb=new Date().getTime().toString();
+    
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/integrations/main/prod/utag.js?_cb=12345';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+
+</body>
+</html>
+Contact GitHub API Training Shop Blog About
